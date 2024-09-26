@@ -7,11 +7,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
-*:root{
+*root{
     --font1: font-family: "Sriracha", cursive;
 
 
 }
+
 html, body {
     min-height: 100vh;
     background-color: darkgray;
@@ -40,13 +41,14 @@ section{
     padding-bottom: 20vh;
     line-height: 2em;
     padding-left: 35px;
-    font-size: 2.8vw;
+    font-size: 2.5vw;
 }
 
 section.imagem > p{
-    background-color: rgba(0, 0, 0, 0.425);
+    background-color: rgba(0, 0, 0, 0.048);
     display: inline-block;
     padding: 10px 30px;
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
 }
 
 section.normal{
@@ -56,7 +58,7 @@ section.normal{
 section.imagem{
     background-color: rgb(43, 42, 42);
     color: white;
-
+    background-size: cover;
 }
 
 header a, footer a{
@@ -72,6 +74,20 @@ a:hover{
     font-size: 1.2em;
     text-decoration: underline;
     background-color: rgba(255, 255, 255, 0.479);
+
+}
+
+section#img001{
+    background-image: url('imagens/background001.jpg');
+    background-position: right center;
+    background-attachment: fixed;
+}
+
+section#img002{
+    background-image: url('imagens/background002.jpg');
+    background-position: right center;
+    background-attachment: fixed;
+    box-shadow: inset 5px 5px 15px 0px black;
 
 }
 
