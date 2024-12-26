@@ -17,13 +17,15 @@
     }
 
     table{
-        width: 700px;
-        height: 300px;
-        border-collapse: collapse;
+        width: 800px;
+        height: 400px;
+        border-collapse: collapse;        
     }
 
     td, th{
         border: 1px solid black;
+        padding: 10px;
+
 
     }
 
@@ -38,14 +40,15 @@
 
         <thead>
             <tr>
-                <th>Grupo</th>
-                <th>Nomes</th>
-                <th colspan="4">Filmes</th>
+                <th scope="col">Grupo</th>
+                <th scope="col">Nomes</th>
+                <th colspan="4" scope="colgroup">Filmes</th>
             </tr>
+        </thead>
 
             <tbody>
                 <tr>
-                <th rowspan="3">Mulheres</th>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
                 <td>Laura Beatriz</td>
                 <td>A Vida Invisível</td>
                 <td>O Céu de Suely</td>
@@ -67,7 +70,7 @@
                 </tr>
 
                 <tr>
-                    <th rowspan="3">Homens</th>
+                    <th rowspan="3" scope="row">Homens</th>
                     <td>João Gabriel</td>
                     <td>Cidade de Deus</td>
                     <td>O Auto da Compadecida</td>
@@ -89,7 +92,12 @@
                 </tr>
             </tbody>
 
-        </thead>
+        <tfoot>
+            <tr>
+                <th colspan="4">Total</th>
+                <td>100000000000000</td>
+            </tr>
+        </tfoot>
 
     </table>
 </body>

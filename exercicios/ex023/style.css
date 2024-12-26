@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+
+caption{
+    font-size: 1.4em;
+
+}
+
+table{
+    width: 600px;
+    height: 230px;
+    border-collapse: collapse;
+}
+
+th, td{
+    border: 1px solid black;
+    
+
+}
+
+col.Profissão{
+    background-color: brown;
+
+}
+
+.Nome{
+    background-color: gray;
+
+}
+
+.Sexo{
+    background-color: rgba(0, 0, 0, 0.644);
+    color-tr
+}
+
+.Idade{
+    background: linear-gradient(to left, red, yellow);
+
+}
